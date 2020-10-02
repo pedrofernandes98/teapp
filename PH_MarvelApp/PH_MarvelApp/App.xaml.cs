@@ -11,7 +11,7 @@ namespace PH_MarvelApp
         {
             InitializeComponent();
 
-            MainPage = new MainPage();
+            MainPage = new NavigationPage(new Views.Login());
         }
 
         protected override void OnStart()

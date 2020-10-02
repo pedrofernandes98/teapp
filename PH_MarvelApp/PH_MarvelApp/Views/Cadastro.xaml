@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="PH_MarvelApp.Views.Cadastro"
+              NavigationPage.HasNavigationBar="False">
+    <ContentPage.Content>
+        <ScrollView>
+            <StackLayout VerticalOptions="FillAndExpand">
+                <Label Text="TEApp"
+                VerticalOptions="CenterAndExpand" 
+                HorizontalOptions="CenterAndExpand" />
+
+                <Entry x:Name="txtNome" Placeholder="Nome Responsável"/>
+                <Entry x:Name="txtEmail"  Placeholder="E-mail Responsável"/>
+                <Entry x:Name="txtSenha" Placeholder="Senha"/>
+                <Entry x:Name="txtConfirmarSenha" Placeholder="Confirmar Senha"/>
+
+                <Entry x:Name="txtNomeCrianca" Placeholder="Nome Criança"/>
+                <Entry x:Name="txtDataNascCrianca" Placeholder="Data de Nascimento"/>
+                <Picker x:Name="pckSexo" Title="Sexo" ItemsSource="ListaSexo"/>
+
+                <Button x:Name="btnConfirmar" Text="Confirmar" Clicked="Button_Clicked" />
+                <Button x:Name="btnRegistrar" Text="Registrar" Clicked="RedirectToLogin" />
+            </StackLayout>
+        </ScrollView>
+    </ContentPage.Content>
+</ContentPage>

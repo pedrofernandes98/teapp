@@ -37,9 +37,7 @@ namespace TestApp
             MarvelAPIService myAPI = new MarvelAPIService();
 
             var retorno = await Task.Run(() => myAPI.getHeroisAsync());
-            await Task.Delay(1000000);
-            await Task.Delay(1000000);
-            await Task.Delay(1000000);
+            
 
 
             foreach (var personagem in retorno)

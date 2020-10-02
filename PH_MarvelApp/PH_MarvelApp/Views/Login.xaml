@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="PH_MarvelApp.Views.Login"
+             NavigationPage.HasNavigationBar="False"
+             >
+    <ContentPage.Content>
+        <StackLayout>
+            <Label Text="TEApp"
+                VerticalOptions="CenterAndExpand" 
+                HorizontalOptions="CenterAndExpand" />
+         
+            <Entry Placeholder="E-mail"/>
+            <Entry Placeholder="Senha"/>
+            <Button Text="Entrar" />
+            <Button Text="Registrar" Clicked="RedirectToRegister" />
+
+            
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
